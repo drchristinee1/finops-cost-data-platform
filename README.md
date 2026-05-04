@@ -34,6 +34,54 @@ GCP ─────┼──> Ingestion Layer ──> Cost Modeling ──> Data
 K8s ─────┤
 SaaS ────┘
 
+## 🧠 Architecture Overview
+
+```text
+                ┌───────────────┐
+                │  Cost Sources │
+                │───────────────│
+                │ AWS (CUR)     │
+                │ GCP Billing   │
+                │ Kubernetes    │
+                │ SaaS Vendors  │
+                │ AI Providers  │
+                └───────┬───────┘
+                        │
+                        ▼
+                ┌───────────────┐
+                │  Ingestion    │
+                │───────────────│
+                │ S3 + Athena   │
+                │ APIs          │
+                │ ETL Pipelines │
+                └───────┬───────┘
+                        │
+                        ▼
+                ┌───────────────┐
+                │ Cost Modeling │
+                │───────────────│
+                │ Unit Economics│
+                │ Cost Drivers  │
+                │ Allocation    │
+                └───────┬───────┘
+                        │
+                        ▼
+                ┌───────────────┐
+                │ Data Platform │
+                │───────────────│
+                │ Warehouse     │
+                │ (Snowflake)   │
+                └───────┬───────┘
+                        │
+                        ▼
+                ┌───────────────┐
+                │ Action Layer  │
+                │───────────────│
+                │ Jira Tickets  │
+                │ Ownership     │
+                │ Alerts        │
+                └───────────────┘
+
 ---
 
 ## 🔧 Core Capabilities
