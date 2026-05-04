@@ -132,3 +132,16 @@ This platform enables organizations to:
 - Align engineering and finance
 - Validate savings in actual billing data
 - Build a scalable FinOps operating model
+---
+
+## 🧪 Examples
+
+This repository includes sample artifacts demonstrating how the platform operates:
+
+- **AWS CUR Query**  
+  Example SQL used to aggregate cost data:  
+  `examples/sample_cur_query.sql`
+
+- **Anomaly → Jira Automation**  
+  Python example that converts cost anomalies into Jira tickets:  
+  `examples/anomaly_to_jira.py`
