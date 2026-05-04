@@ -1,16 +1,44 @@
-# FinOps Cost Data Platform (RevealCostAI Architecture)
+# FinOps Cost Data Platform
 
-This project demonstrates how to design and operate a centralized cost and vendor data platform that consolidates usage and billing data across:
+A prototype FinOps data platform that consolidates cloud and vendor cost data into a trusted source of truth for Engineering, Finance, and Product teams.
 
-- AWS (CUR)
-- GCP (Billing Export)
-- Kubernetes (OpenCost / metrics)
-- SaaS vendors (Snowflake, Datadog, etc.)
-- AI providers (OpenAI, Anthropic)
+## Problem
 
-into a **single, trusted source of truth**.
+Cloud cost data is often fragmented across AWS CUR, Kubernetes allocation data, observability vendors, AI providers, and SaaS platforms. This makes it difficult to connect spend to ownership, product usage, forecasts, and optimization actions.
 
----
+## What This Project Demonstrates
+
+- Cost data ingestion
+- Normalized cost schema
+- Vendor and cloud spend categorization
+- Ownership mapping
+- Monthly cost summary
+- Engineering-facing cost reporting
+- Foundation for dashboards, alerts, and Jira workflows
+
+## Tech Stack
+
+- Python
+- CSV-based prototype data
+- AWS CUR-style cost model
+- SQL examples
+- Future: Athena, S3, Glue, Terraform, CI/CD, Jira API
+
+## Architecture
+
+Raw Cost Data → Normalize → Enrich with Ownership → Summarize → Report → Route Action
+
+## Example Use Cases
+
+- Identify top cost drivers by service
+- Map spend to team/application owner
+- Create monthly FinOps review summaries
+- Support forecasting and variance analysis
+- Feed dashboards and Jira-based remediation workflows
+
+## Why This Matters
+
+This project shows how FinOps moves beyond reporting into operational cost governance: creating a repeatable system where cost signals become engineering decisions and business outcomes.
 
 ## 🎯 Objective
 
