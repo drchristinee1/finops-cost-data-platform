@@ -148,6 +148,24 @@ This platform is designed to support decision-making through measurable outcomes
 
 These metrics connect infrastructure cost directly to business performance and engineering behavior.
 
+---
+
+## 🔗 Supporting Components
+
+This platform is composed of modular components, each focused on a specific layer of the FinOps system:
+
+- **Cost Ingestion** → [reveal-finops-lab](https://github.com/drchristinee1/reveal-finops-lab)  
+  Pipelines for ingesting AWS CUR data and generating cost signals
+
+- **Cost Modeling** → [driver-based-finops-modeling-engine](https://github.com/drchristinee1/driver-based-finops-modeling-engine)  
+  Unit economics and cost driver modeling engine
+
+- **Kubernetes Allocation** → [Kubernetes-Economic-Attribution-Engine](https://github.com/drchristinee1/Kubernetes-Economic-Attribution-Engine)  
+  Allocation of shared and idle Kubernetes costs across teams
+
+- **AI Cost Analysis** → [claude-lambda-finops-agent](https://github.com/drchristinee1/claude-lambda-finops-agent)  
+  AI-powered explanation of cost anomalies and engineering recommendations
+
 ## 🧪 Examples
 
 This repository includes sample artifacts demonstrating how the platform operates:
