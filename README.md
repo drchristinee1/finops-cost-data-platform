@@ -133,6 +133,20 @@ This platform enables organizations to:
 - Validate savings in actual billing data
 - Build a scalable FinOps operating model
 ---
+---
+
+## 📊 Key FinOps Metrics
+
+This platform is designed to support decision-making through measurable outcomes:
+
+- Commitment Coverage %
+- Commitment Utilization %
+- Cost per Unit (API, user, transaction)
+- Idle Resource %
+- Anomaly Detection & Resolution Time
+- Budget vs Forecast Variance
+
+These metrics connect infrastructure cost directly to business performance and engineering behavior.
 
 ## 🧪 Examples
 
