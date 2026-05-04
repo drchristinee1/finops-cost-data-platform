@@ -55,7 +55,14 @@ To transform fragmented cloud and vendor cost data into:
 
 Sources → Ingestion → Modeling → Storage → Action Layer
 
-This platform is designed not just for visibility, but for **execution and accountability**.
+This platform reflects how I operationalize FinOps in practice, not just surfacing cost data, but translating it into ownership, action, and measurable outcomes.
+
+It follows the same principles I’ve used in production:
+- Cost signals must map to a clear owner
+- Insights must translate into engineering actions
+- Every action must be tracked and validated (e.g., via Jira workflows)
+
+The goal is not visibility alone — it is execution, accountability, and continuous cost improvement.
 ```text
 AWS CUR ─┐
 GCP ─────┼──> Ingestion Layer ──> Cost Modeling ──> Data Warehouse ──> Action Layer (Jira)
@@ -205,3 +212,8 @@ This repository includes sample artifacts demonstrating how the platform operate
 - **Anomaly → Jira Automation**  
   Python example that converts cost anomalies into Jira tickets:  
   `examples/anomaly_to_jira.py`
+## Real-World Application
+
+This architecture is inspired by the FinOps operating model I’ve built, where cost variance signals are automatically routed to technical owners through Jira workflows, tracked through resolution, and used to improve forecasting and accountability.
+
+This approach defines cost-efficient patterns across compute, storage, observability, and AI usage, and embeds them into infrastructure and workflows so cost efficiency becomes a built-in part of engineering decisions, not an afterthought.
