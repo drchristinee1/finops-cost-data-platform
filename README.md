@@ -1,6 +1,6 @@
 # FinOps Cost Data Platform
 
-A prototype FinOps data platform that consolidates cloud and vendor cost data into a trusted source of truth for Engineering, Finance, and Product teams.
+A FinOps data-to-action platform that transforms cloud cost signals into engineering actions and validated financial outcomes.
 
 ## Problem
 
