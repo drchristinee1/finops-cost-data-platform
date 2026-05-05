@@ -1,4 +1,7 @@
 # FinOps Cost Data Platform
+<p align="center">
+  <img src="./images/finops-architecture.png" width="800"/>
+</p>
 
 A FinOps data-to-action platform that transforms cloud cost signals into engineering actions and validated financial outcomes.
 
